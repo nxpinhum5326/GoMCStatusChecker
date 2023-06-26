@@ -8,7 +8,7 @@ import (
 
 func main() {
 	conn := new(mcrcon.MCConn)
-	err := conn.Open("xxx.xxx.x.xx:PORT", "rconPassword")
+	err := conn.Open("IP:PORT", "rconPassword")
 	if err != nil {
 		log.Println("Connection failed!", err)
 	}
